@@ -1,37 +1,43 @@
+<!--Shift+alt+f-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <main>
-        <div class="item activete" style="--background: #ea3d41">
-            <div class="title">Abacate</div>
-            <img src="./image/Abacate-refrigerante-foregroundBlur.png" alt="Abacate" class="fruit">
-            <img src="./image/Abacate-refrigerante.png" alt="Lata de refrigerante abacate" class="can">
+        <div class="item active" style="--background: #ea3d41">
+            <div>Morango</div><!--class="title"-->
+            <img src="./image/Morango-refrigerante-foregroundBlur.png" alt="Fruta morango" class="fruit">
+            <img src="./image/Morango-refrigerante.png" alt="Lata de refrigerante de morango" class="can">
         </div>
 
-          <!-- <div class="item">
-            <div class="title>Abacate</div>
-            <img src="" alt="" class="fruit">
-            <img src="" alt="" class="can">
-        </div> -->
-
-          <!-- <div class="item">
-            <div class="title>Abacate</div>
-            <img src="" alt="" class="fruit">
-            <img src="" alt="" class="can">
-        </div> -->
+        <div class="item" style="--background: #2d5643">
+            <div>Abacate</div><!--class="title"-->
+            <img src="./image/Abacate-refrigerante-foregroundBlur.png" alt="Fruta abacate" class="fruit">
+            <img src="./image/Abacate-refrigerante.png" alt="Lata de refrigerante de abacate" class="can">
+        </div>
+        
+        <div class="item" style="--background: #e7a043">
+            <div>Laranja</div><!--class="title"-->
+            <img src="./image/Laranja-refrigerante-foregroundBlur.png" alt="Fruta laranja" class="fruit">
+            <img src="./image/Laranja-refrigerante.png" alt="Lata de refrigerante de laranja" class="can">
+        </div>
 
         <div class="arrow">
-            <button> < </button>
-            <button> > </button>
+            <button id="prev"> < </button>
+            <button id="next"> > </button>
         </div>
 
     </main>
-    
+
 </body>
+
+<script src="./script.js"></script>
 </html>
