@@ -1,4 +1,3 @@
-/* Estilo base para cada item do carrossel */
 .item {
     width: 100%;
     /* Ocupa toda a largura do container */
@@ -24,7 +23,6 @@
     /* Transição suave para a opacidade */
 }
 
-/* Estilo para o item ativo */
 .item.active {
     display: block;
     /* Garante que o item ativo seja exibido */
@@ -34,7 +32,6 @@
     /* Habilita eventos de mouse para o item ativo */
 }
 
-/* Título centralizado dentro do item */
 .item .title {
     font-size: 9rem;
     color: white;
