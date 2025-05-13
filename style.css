@@ -1,23 +1,40 @@
+/* Estilo base para cada item do carrossel */
 .item {
-    /* display: none; */
     width: 100%;
+    /* Ocupa toda a largura do container */
     height: 100%;
+    /* Ocupa toda a altura do container */
     position: absolute;
+    /* Tira o item do layout normal e permite colocar ele exatamente onde quiser.
+                       Usa top, left, right e bottom para posicionar.
+                       Fica por cima dos outros elementos. */
     top: 0;
+    /* Posiciona o item no topo do container */
     left: 0;
+    /* Posiciona o item na esquerda do container */
     overflow: hidden;
+    /* Esconde o que ultrapassa os limites do container */
     background-color: var(--background);
+    /* Cor de fundo dinâmica baseada em variável CSS */
     opacity: 0;
-    pointer-events: none; 
+    /* Esconde visualmente o item (transparente) */
+    pointer-events: none;
+    /* Desabilita eventos de mouse (não pode clicar, arrastar, etc.) */
     transition: opacity 0.5s ease;
+    /* Transição suave para a opacidade */
 }
 
+/* Estilo para o item ativo */
 .item.active {
     display: block;
+    /* Garante que o item ativo seja exibido */
     opacity: 1;
+    /* Torna o item ativo visível */
     pointer-events: auto;
+    /* Habilita eventos de mouse para o item ativo */
 }
 
+/* Título centralizado dentro do item */
 .item .title {
     font-size: 12rem;
     color: white;
@@ -27,69 +44,91 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    /* Centraliza exatemnte no meio */
 }
 
 .item .fruit {
     width: 90%;
+    /* A imagem ocupa 90% da largura do container */
     position: absolute;
     top: 0;
     z-index: 3;
-
-     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform:translate(-50%, -50%)
-}
-
-.item .can {
-    z-index: 2;
-    width: 600px;
+    /* Fica acima da lata */
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
+        /* Centraliza no meio da tela */
 }
 
-#prev, #next {
+.item .can {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /*Fica atrás da fruta */
+}
+
+#prev,
+#next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    /* Centraliza verticalmente */
     width: 50px;
     height: 50px;
     background-color: #eee9;
+    /* Fundo semi-transparente */
     border: 1px solid #eee9;
     color: #333;
+    /* Cor da seta */
     font-size: 24px;
     font-family: monospace;
     cursor: pointer;
+    /* Muda o cursor ao passar por cima para indicar que é clicável */
     z-index: 4;
+    /* Fica acima de tudo no layout */
     border-radius: 50%;
+    /* Bordas arredondadas (círculo) */
     display: flex;
     align-items: center;
+    /* Centraliza verticalmente o conteúdo (seta) */
     justify-content: center;
+    /* Centraliza horizontalmente o conteúdo (seta) */
 }
 
 #prev {
     left: 30px;
+    /* Posicionamento do botão "anterior" á esquerda */
 }
 
 #next {
     right: 30px;
+    /* Posicionamento do botão "próximo" á direita */
 }
 
-@keyframes toActive{
-    from{
+/* Animação que será usada ao ativar um item */
+@keyframes toActive {
+    from {
         top: 100%;
+        /* Começa de baixo da tela */
         opacity: 0;
+        /* Começa invisível */
     }
 }
 
+/* Aplica a animação a ativar a imagem da fruta */
 .item.active img.fruit {
     animation: toActive 0.5s ease-in-out;
+    /* Sobe e aparece suavemente */
 }
 
+/* Aplica a mesma animação ao título */
 .item.active .title {
     animation: toActive 0.5s ease-in-out;
+    /* Título sobe e aparece junto com a fruta */
 }
