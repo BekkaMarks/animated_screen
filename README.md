@@ -93,12 +93,31 @@
 <p>Com a estrutura HTML definida, o próximo passo é aplicar estilos para que os elementos ganhem forma, cores e
     comportamento visual. Através do CSS, conseguimos controlar a aparência de cada parte da interface: desde o
     posicionamento dos elementos até as animações e transições que enriquecem a experiência do usuário.</p>
-<p>As explicações neste README foram elaboradas para fornecer uma visão mais conceitual e aprofundada sobre cada etapa.
+<p>Pequeno resumo de cada etapa:</p>
+<form>
+    <ul>
+        <li><strong>Itens do Carrossel:</strong> Cada item ocupa 100% da largura e altura do container, sendo
+            posicionado de forma absoluta para sobrepor os outros. A opacidade é inicialmente definida como 0
+            (invisível), com transições suaves para alternar entre os itens de forma gradual.</li><br>
+        <li><strong>Animações e Transições: </strong> A animação toActive é aplicada quando um item se torna ativo, com
+            a imagem (fruta) se movendo até o centro e o título se reposicionando no topo.</li><br>
+        <li><strong>Botões de Navegação:</strong> Os botões de "anterior" e "próximo" são centralizados verticalmente
+            nas laterais do carrossel. Eles têm um fundo semi-transparente, bordas arredondadas e são projetados para
+            indicar interatividade com o cursor.</li>
+    </ul>
+</form>
+<p><strong><em>obs</em></strong>: As explicações neste README foram elaboradas para fornecer uma visão mais conceitual e
+    aprofundada sobre cada etapa.
     No entanto, o próprio código também contém comentários pontuais, que servem como guias diretos para compreensão
     contextual e prática de cada bloco de estilo.</p>
 
 
 <h2>JavaScript ⚙️</h2>
+<p> Com o <em>HTML</em> e o <em>CSS</em> já definidos, chegamos à parte final do nosso código. É aqui que proporcionamos
+    uma experiência de carrossel interativo, onde apenas um item pe exibido por vez. A alternância entre os itens é
+    feita com suavidade, aproveitando as classes CSS para controlar a visibilidade e aplicar efeitos visuais definidos
+    anteriormente. A lógica garante que o carrossel funcione de forma cíclica, ou seja, ao atingir o final da lista, ele
+    volta para o início, e vice-versa.</p><br><br><br>
 
 <p>Matérial utilizado para estruturar o código</p>
 <a href="https://www.youtube.com/watch?v=QLbrpjfltFs">Como Fazer Aplicação Animada com HTML, Javascript e CSS...</a>
