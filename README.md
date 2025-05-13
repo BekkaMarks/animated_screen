@@ -88,12 +88,15 @@
     usuário precise digitar o nome completo do arquivo na URL e garante que a estrutura do site funcione
     corretamente
     desde o início.</p>
-</h3>
 
 <h2>CSS 🎨</h2>
 <p>Com a estrutura HTML definida, o próximo passo é aplicar estilos para que os elementos ganhem forma, cores e
     comportamento visual. Através do CSS, conseguimos controlar a aparência de cada parte da interface: desde o
     posicionamento dos elementos até as animações e transições que enriquecem a experiência do usuário.</p>
+<p>As explicações neste README foram elaboradas para fornecer uma visão mais conceitual e aprofundada sobre cada etapa.
+    No entanto, o próprio código também contém comentários pontuais, que servem como guias diretos para compreensão
+    contextual e prática de cada bloco de estilo.</p>
+
 
 <h2>JavaScript ⚙️</h2>
 
