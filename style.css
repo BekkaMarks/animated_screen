@@ -68,6 +68,23 @@ main {
     left: 50%;
     transform: translate(-50%);
     /* Para Centraliza exatamente no meio (-50%, -50%)*/
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+.item.active .title {
+    top: 3%;
+    /* posição final estática */
+    transform: translate(-50%);
+    position: absolute;
+    /* posição final estática */
+    animation: toActive 0.5s ease-in-out;
+    /* animação */
+    animation-delay: 0.1s;
+    /* opcional */
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .item .fruit {
@@ -149,17 +166,3 @@ main {
     position: absolute;
     animation: toActive 0.5s ease-in-out;
 }
-
-/* título vai para cima da fruta */
-.item.active .title {
-    top: 3%;
-    /* posição final estática */
-    transform: translate(-50%);
-    position: absolute;
-    /* posição final estática */
-    animation: toActive 0.5s ease-in-out;
-    /* animação */
-    animation-delay: 0.1s;
-    /* opcional */
-}
-/**/
